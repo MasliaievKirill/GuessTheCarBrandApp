@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Guess The Car Brand App</string>
+    <string name="app_hello">Угадай название автомобиля</string>
+    <string name="choose_country">Выбери страну производитель</string>
+    <string name="choose">Выбор</string>
+    <string name="start_play">НАЧАТЬ</string>
+    <string name="button">Button</string>
+    <string name="car_brand">Логотип автомобиля</string>
+    <string name="usa">США</string>
+    <string name="germany">Германия</string>
+    <string name="france">Франция</string>
+    <string name="great_britain">Великобритания</string>
+    <string name="usa_flag">Флаг США</string>
+    <string name="germany_flag">Флаг Германии</string>
+    <string name="france_flag">Флаг Франции</string>
+    <string name="great_britain_flag">Флаг Великобритании</string>
+</resources>
