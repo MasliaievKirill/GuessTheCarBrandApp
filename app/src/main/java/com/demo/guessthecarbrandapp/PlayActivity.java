@@ -46,6 +46,10 @@ public class PlayActivity extends AppCompatActivity {
     private int numberOfQuestion;
     private int numberOfRightAnswer;
 
+    private int rightAnswers = 0;
+    private int wrongAnswers = 0;
+    private int clickNumber = 0;
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,14 +84,24 @@ public class PlayActivity extends AppCompatActivity {
     }
 
     public void onClickAnswer(View view) {
-        Button button = (Button) view;
-        String tag = button.getTag().toString();
-        if (Integer.parseInt(tag) == numberOfRightAnswer) {
-            Toast.makeText(this, "Верно", Toast.LENGTH_SHORT).show();
+        if (clickNumber < 10) {
+            Button button = (Button) view;
+            String tag = button.getTag().toString();
+            if (Integer.parseInt(tag) == numberOfRightAnswer) {
+                Toast.makeText(this, "Верно", Toast.LENGTH_SHORT).show();
+                rightAnswers++;
+            } else {
+                Toast.makeText(this, "Неверно, правильный ответ: " + brands.get(numberOfQuestion), Toast.LENGTH_SHORT).show();
+                wrongAnswers++;
+            }
+            clickNumber++;
+            playGame();
         } else {
-            Toast.makeText(this, "Неверно, правильный ответ: " + brands.get(numberOfQuestion), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ResultActivity.class);
+            intent.putExtra("right", rightAnswers);
+            intent.putExtra("wrong", wrongAnswers);
+            startActivity(intent);
         }
-        playGame();
     }
 
     private static class DownloadContentTask extends AsyncTask<String, Void, String> {

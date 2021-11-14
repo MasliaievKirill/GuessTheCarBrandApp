@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Guess The Car Brand App</string>
     <string name="app_hello">Угадай название автомобиля</string>
-    <string name="choose_country">Выбери страну производитель</string>
+    <string name="choose_country">Выбери страну производитель \n У тебя будет 10 попыток</string>
     <string name="choose">Выбор</string>
     <string name="start_play">НАЧАТЬ</string>
     <string name="button">Button</string>
@@ -14,4 +14,8 @@
     <string name="germany_flag">Флаг Германии</string>
     <string name="france_flag">Флаг Франции</string>
     <string name="great_britain_flag">Флаг Великобритании</string>
+    <string name="right_answers">Правильных ответов:</string>
+    <string name="number">0</string>
+    <string name="wrong_answers">Неправильных ответов:</string>
+    <string name="back_to_start">ВЕРНУТЬСЯ К НАЧАЛУ</string>
 </resources>
