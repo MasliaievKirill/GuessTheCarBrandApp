@@ -38,7 +38,8 @@
         app:layout_constraintTop_toBottomOf="@+id/guideline4"
         tools:ignore="DuplicateSpeakableTextCheck"
         android:backgroundTint="#FF0000"
-        android:onClick="onClickAnswer"/>
+        android:onClick="onClickAnswer"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/button1"
@@ -52,7 +53,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button0"
         app:layout_constraintBottom_toTopOf="@id/button2"
         android:backgroundTint="#FF0000"
-        android:onClick="onClickAnswer"/>
+        android:onClick="onClickAnswer"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/button2"
@@ -66,7 +68,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button1"
         app:layout_constraintBottom_toTopOf="@id/button3"
         android:backgroundTint="#FF0000"
-        android:onClick="onClickAnswer"/>
+        android:onClick="onClickAnswer"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/button3"
@@ -80,5 +83,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         android:backgroundTint="#FF0000"
-        android:onClick="onClickAnswer"/>
+        android:onClick="onClickAnswer"
+        android:layout_margin="10dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
